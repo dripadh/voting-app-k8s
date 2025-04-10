@@ -1,1 +1,0 @@
-print("Namboo +  Entry Course")d
