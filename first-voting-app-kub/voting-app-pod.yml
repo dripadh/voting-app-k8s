@@ -7,8 +7,8 @@ metadata:
        app: demo-voting-pod
 
 spec:
-  comtainers:
+  containers:
    - name: voting-app
-     image: dockersamples/examplevotingapp_vote
+     image: dripadhofc/myflaskapp
      ports:
      - containerPort: 80

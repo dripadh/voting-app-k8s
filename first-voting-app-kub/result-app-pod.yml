@@ -9,6 +9,6 @@ metadata:
 spec:
   containers:
     - name: result-app
-      image: dockersamples/examplevotingapp_result
+      image: dripadhofc/resultimage
       ports:
         - containerPort: 80
