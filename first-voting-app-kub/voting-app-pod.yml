@@ -1,14 +1,19 @@
-apiversion: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: voting-app-pod
   labels:
-       name: voting-app-pod
-       app: demo-voting-pod
-
+    app: demo-voting-app
 spec:
   containers:
-   - name: voting-app
-     image: dripadhofc/myflaskapp
-     ports:
-     - containerPort: 80
+    - name: voting-app
+      image: dripadhofc/vote-app:latest
+      ports:
+        - containerPort: 80
+      resources:
+        requests:
+          memory: "256Mi"
+          cpu: "250m"
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
